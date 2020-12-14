@@ -11,7 +11,10 @@
 </head>
 <body>
 <div class="contain">
-	<div id = "background2" style="position: absolute; top:0px; left:0px; z-index: -1;">
+	<div id = "background3" style="position: absolute; top:0px; left:0px; z-index: -1;">
+		<img id="back3" src="pages/background3.jpg" alt="" style="height: 100vh; position: absolute; z-index: 1; width: auto;">
+	</div>
+	<div id = "background2" style="position: absolute; top:0px; left:0px; z-index: -2;">
 		<img id="back2" src="pages/background2.jpg" alt="" style="height: 100vh; position: absolute; z-index: 2; width: auto;">
 	</div>
 	<div id = "background1">
@@ -78,10 +81,17 @@ function loadApp() {
 		if(page == 32){
 			$("div#background1").fadeOut(1000)
 			$("div#background2").fadeIn(1000)
+			$("div#background3").fadeOut(1000)
+		}
+		else if(page == 20){
+			$("div#background1").fadeOut(1000)
+			$("div#background2").fadeOn(1000)
+			$("div#background3").fadeIn(1000)
 		}
 		else{
 			$("div#background1").fadeIn(1000)
 			$("div#background2").fadeOut(1000)
+			$("div#background3").fadeOut(1000)
 		}
   	});
 }
