@@ -7,6 +7,28 @@ body{
 	padding:0;
 }
 
+#back2{
+	height: 100vh;
+	position: absolute; 
+	z-index: 2; 
+	width: auto;
+}
+#back1{
+	height: 100vh;
+	position: absolute;
+	width: auto;
+}
+
+@media all and (min-width:1024px) {
+	#back2{
+		width: 100vw;
+		height: auto;
+	}
+	#back1{
+		width: 100vw;
+		height: auto;
+	}
+}
 .flipbook-viewport{
 	overflow:hidden;
 	width:100%;
