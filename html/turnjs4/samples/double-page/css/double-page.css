@@ -19,7 +19,7 @@ body{
 	width: auto;
 }
 
-@media all and (min-width:1024px) {
+@media all and (orientation: landscape) {
 	#back2{
 		width: 100vw;
 		height: auto;
